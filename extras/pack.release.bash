@@ -25,6 +25,9 @@ echo $CORE_NAME
 VERSION=`grep version= platform.txt | sed 's/version=//g'`
 echo $VERSION
 
+VERSION_FROM_TAG=$VERSION
+CORE_NAME=${CORE_NAME}_$(echo $GITHUB_REF | rev | cut -d "/" -f 1 | rev)
+
 if [ $VERSION != $VERSION_FROM_TAG ]; then
     exit 0
 fi
