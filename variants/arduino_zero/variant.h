@@ -81,8 +81,8 @@ extern "C" unsigned int PINCOUNT_fn();
 
 // LEDs
 #define PIN_LED_13           (13u)
-#define PIN_LED_RXL          (25u)
-#define PIN_LED_TXL          (26u)
+// #define PIN_LED_RXL          (25u)
+// #define PIN_LED_TXL          (26u)
 #define PIN_LED              PIN_LED_13
 #define PIN_LED2             PIN_LED_RXL
 #define PIN_LED3             PIN_LED_TXL
@@ -160,7 +160,7 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 /*
  * USB
  */
-#define PIN_USB_HOST_ENABLE (27ul)
+// #define PIN_USB_HOST_ENABLE (27ul)
 #define PIN_USB_DM          (28ul)
 #define PIN_USB_DP          (29ul)
 
